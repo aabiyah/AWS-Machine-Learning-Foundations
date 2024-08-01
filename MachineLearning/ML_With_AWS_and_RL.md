@@ -73,9 +73,9 @@ Reinforcement learning is used in a variety of fields to solve real-world proble
    - **Educational Resources:** Provides curriculum for training and certifying developers in machine learning techniques.
 
 > NOTE:
-1. Workflow Services: Amazon SageMaker, Deep Learning AMI, Deep Learning Containers, AWS Batch, AWS ParallelCluster, Elastic Kubernetes Service, Elastic Container Service, Amazon EMR
-2. Frameworks: TensorFlow, PyTorch, mxnet, Keras, Gluon,
-3. Compute, Networking & Storage: EC2 P4 instances, EC2 P3 instances, EC2 G4 instances, EC2 Inf1 instances, Elasric Inference, AWS Outposts, Elastic Fabric Adapter, Amazon S3, Amazon EBS, Amazon FSx, Amazon EFS
+> 1. Workflow Services: Amazon SageMaker, Deep Learning AMI, Deep Learning Containers, AWS Batch, AWS ParallelCluster, Elastic Kubernetes Service, Elastic Container Service, Amazon EMR
+> 2. Frameworks: TensorFlow, PyTorch, mxnet, Keras, Gluon,
+> 3. Compute, Networking & Storage: EC2 P4 instances, EC2 P3 instances, EC2 G4 instances, EC2 Inf1 instances, Elasric Inference, AWS Outposts, Elastic Fabric Adapter, Amazon S3, Amazon EBS, Amazon FSx, Amazon EFS
 
 ### AWS DeepRacer: 
 1. https://www.youtube.com/watch?v=li-lJe3QWds
@@ -111,7 +111,7 @@ Reinforcement learning is used in a variety of fields to solve real-world proble
 
 In a reinforcement learning model, an agent learns in an interactive real-time environment by trial and error using feedback from its own actions. Feedback is given in the form of rewards.
 
-> Putting Your Spin on AWS DeepRacer: The Practitioner's Role in RL:
+#### Putting Your Spin on AWS DeepRacer: The Practitioner's Role in RL:
 ## Enhancing AWS DeepRacer Performance
 
 AWS DeepRacer may be autonomous, but you still have an important role to play in the success of your model. In this section, we introduce the training algorithm, action space, hyperparameters, and reward function and discuss how your ideas make a difference.
@@ -134,7 +134,7 @@ AWS DeepRacer may be autonomous, but you still have an important role to play in
 ### Reward Function
 - The **reward function**'s purpose is to encourage the agent to reach its goal. Determining how to reward which actions is one of your most important tasks.
 
-> Putting Reinforcement Learning into Action with AWS DeepRacer
+#### Putting Reinforcement Learning into Action with AWS DeepRacer
 ## Visualizing Reward Functions and Trade-Offs in AWS DeepRacer
 
 This video put the concepts we've learned into action by imagining the reward function as a grid mapped over the race track in AWS DeepRacer’s training environment and visualizing it as metrics plotted on a graph. It also introduced the trade-off between exploration and exploitation, an important challenge unique to this type of machine learning.
