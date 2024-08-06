@@ -49,13 +49,13 @@ shirt_one.price = 20
 shirt_one.color = 'red'
 shirt_one.size = 'M'
 shirt_one.style = 'long_sleeve'
+```
 
 This code accesses and changes the price, color, size, and style attributes directly. Accessing attributes directly would be frowned upon in many other languages, but not in Python. Instead, the general object-oriented programming convention is to use methods to access attributes or change attribute values. These methods are called set and get methods or setter and getter methods.
 
 A get method is for obtaining an attribute value, and a set method is for changing an attribute value. If you were writing a Shirt class, you could use the following code:
-
+```python
 class Shirt:
-
     def __init__(self, shirt_color, shirt_size, shirt_style, shirt_price):
         self._price = shirt_price
 
@@ -64,11 +64,13 @@ class Shirt:
 
     def set_price(self, new_price):
         self._price = new_price
-
+```
 Instantiating and using an object might look like the following code:
+```
 shirt_one = Shirt('yellow', 'M', 'long-sleeve', 15)
 print(shirt_one.get_price())
 shirt_one.set_price(10)
+```
 
 In the class definition, the underscore in front of price is a somewhat controversial Python convention. In other languages like C++ or Java, price could be explicitly labeled as a private variable. This would prohibit an object from accessing the price attribute directly like shirt_one._price = 15. Unlike other languages, Python does not distinguish between private and public variables. Therefore, there is some controversy about using the underscore convention as well as get and set methods in Python. Why use get and set methods in Python when Python wasn't designed to use them?
 
@@ -89,11 +91,12 @@ Why might it be better to change a value with a method instead of directly? Chan
 
 Example: Dollars versus Euros
 If you've changed attribute values directly, you'll have to go through your code and find all the places where US dollars were used, such as in the following:
-shirt_one.price = 10 # US dollars
+```shirt_one.price = 10 # US dollars```
 If you had used a method, then you would only have to change the method to convert from dollars to Euros:
-def change_price(self, new_price):
+```def change_price(self, new_price):
     self.price = new_price * 0.81 # convert dollars to Euros
 
 shirt_one.change_price(10)
+```
 
 For the purposes of this introduction to object-oriented programming, you don't need to worry about updating attributes directly versus with a method; however, if you decide to further your study of object-oriented programming, especially in another language such as C++ or Java, you'll have to take this into consideration.
